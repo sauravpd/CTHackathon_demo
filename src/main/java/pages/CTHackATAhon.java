@@ -1,5 +1,7 @@
 package pages;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,14 +13,9 @@ import org.openqa.selenium.support.FindBy;
  */
 public class CTHackATAhon extends PageObject
 {
-	@FindBy(name = "username")
-	private WebElement userName;
 
-	@FindBy(name = "password")
-	private WebElement password;
-
-	@FindBy(xpath = ".//*[@type='submit']")
-	private WebElement submitbtn;
+	@FindBy(xpath = "//*[contains(text(),'#CTHackATAhon')]")
+	private List<WebElement> CTHackATAhonText;
 
 	public CTHackATAhon(WebDriver driver) 
 	{
@@ -34,5 +31,10 @@ public class CTHackATAhon extends PageObject
 	public void enterPassword(String pwd) 
 	{
 		password.sendKeys(pwd);
+	}
+	
+	public int getCount()
+	{
+		return CTHackATAhonText.size();
 	}
 }

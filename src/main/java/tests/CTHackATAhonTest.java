@@ -16,6 +16,7 @@ public class CTHackATAhonTest extends BaseTest
 	{
 		LOG.info("****CTHackATAhon Test****");
 		CTHackATAhon cTHackATAhon = new CTHackATAhon(driver);
+		LOG.info("#CTHackATAhon count :"+cTHackATAhon.getCount());		
 
 	}	
 }
