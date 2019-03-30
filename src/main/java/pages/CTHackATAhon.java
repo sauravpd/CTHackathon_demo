@@ -22,17 +22,6 @@ public class CTHackATAhon extends PageObject
 		super(driver);
 	}
 
-	public void enterUsername(String username) 
-	{
-		userName.sendKeys(username);
-	}
-
-	
-	public void enterPassword(String pwd) 
-	{
-		password.sendKeys(pwd);
-	}
-	
 	public int getCount()
 	{
 		return CTHackATAhonText.size();
