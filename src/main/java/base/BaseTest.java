@@ -35,6 +35,7 @@ public class BaseTest
 			{
 				fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\resources\\config\\Config.properties");
 				config.load(fis);
+				
 				log.info("Config file loaded successfully !!");
 
 				if (config.getProperty("browser").equals("chrome")) 
