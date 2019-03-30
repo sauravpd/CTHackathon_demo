@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Smoke Suite">
-  <test name="Login Test">
+<suite name="CTHackATAhonTest Suite">
+  <test name="CTHackATAhonTest Test">
     <classes>
-      <class name="tests.LoginTest"/>
+      <class name="tests.CTHackATAhonTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
