@@ -45,6 +45,11 @@ public class BaseTest
 					driver = new ChromeDriver();
 					log.info("Chrome Launched !!!");
 				} 
+				else if(config.getProperty("browser").equals("firefox")) 
+				{
+					System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+File.separator+"src"+File.separator+"main"+File.separator+"resources"+File.separator+"geckodriver.exe");
+			        driver = new FirefoxDriver();
+				}
 
 				driver.get(config.getProperty("application_url"));
 				driver.manage().window().maximize();
